@@ -1,0 +1,24 @@
+{
+  "name": "datagantt",
+  "version": "0.0.1",
+  "description": "Dataview tools for automatic scheduling",
+  "main": "datagantt.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "build": "rm -f dist/*.js && npx babel datagantt.js --out-dir dist"
+  },
+  "transform": {},
+  "author": "Will",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.17.0",
+    "@babel/core": "^7.17.0",
+    "@babel/preset-env": "^7.16.11",
+    "jest": "^27.4.7",
+    "luxon": "^2.3.0"
+  },
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
+}
