@@ -5,7 +5,7 @@ Here's an example `dataviewjs` script using the DataView Scheduler.
 
 To use this, in your vault you need to
 - create a `/code` directory
-- copy the `datagantt.js` file from this repo to your vault's new `/code/` folder
+- copy the `datagantt.js` file from this repo's releases (or build yourself with `yarn run build`) to your vault's new `/code/` folder
 - download `moment.min.js` from [momentjs.com](ttps://momentjs.com/) and copy `moment.min.js` to the `/code/` folder in your vault
 - restart Obsidian to pick up these changes
 
