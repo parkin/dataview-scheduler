@@ -435,12 +435,14 @@ function _scheduleManual(flatTasks, scheduleStart, schedule) {
 }
 
 function addKeys(taskList) {
-  taskList.values.forEach((item) => {
-    if (!('key' in item)) {
-      item.key = item.link.path + " line: " + item.line
-    }
-    addKeys(item.subtasks);
-  });
+  if(('values' in taskList)){
+	  taskList.values.forEach((item) => {
+	    if (!('key' in item)) {
+	      item.key = item.link.path + " line: " + item.line
+	    }
+	    addKeys(item.subtasks);
+	  });
+  }
 }
 
 function getDuplicateKeys(flatTasks) {
